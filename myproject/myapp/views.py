@@ -58,3 +58,4 @@ def delete_student(request, student_id):
     except Exception as e:
       return JsonResponse({'error': str(e)}, status=500)
   return JsonResponse({'success': False, 'error': 'Invalid request method'}, status=405)
+

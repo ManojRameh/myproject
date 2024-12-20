@@ -23,6 +23,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('get_students/', views.get_students, name='get_students'),
     path('add_student/', views.add_student, name='add_student'),
-    path('update_student/<int:student_id>/', views.update_student, name='update_student'),
     path('delete_student/<int:student_id>/', views.delete_student, name='delete_student'),
+    path('update_student/<int:student_id>/', views.update_student, name='update_student'),
 ]
